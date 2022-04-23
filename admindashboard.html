@@ -69,48 +69,85 @@ id="sidebar"
         <a class="navbar-brand fw-bolder fs-5" href="admindashboard.html"><i class="bi bi-house-door-fill"></i> Home</a>
       <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-      <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
-      <li>
-        <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
-          Interface
+      <li class="my-3"><hr class="dropdown-divider bg-light" /></li>
+    
+        <div>
+          <a href="manageaddcourse.html" class="text-light small fw-bold text-uppercase px-2 mb-1 text-decoration-none"> Course</a>
         </div>
-      </li>
+        <li>
+          <a
+            class="nav-link px-2 sidebar-link"
+            href="manageaddcourse.html"
+          >
+            <span class="me-2"><i class="bi bi-patch-question-fill"></i></span>
+            <span>Add Course</span>
+          </a>
+        </li>
+      
+     
       <li>
         <a
-          class="nav-link px-3 sidebar-link"
-          href="ques.html"
+          class="nav-link px-2 sidebar-link"
+          href="manageaddcourse.html"
         >
           <span class="me-2"><i class="bi bi-patch-question-fill"></i></span>
-          <span>Add Questions</span>
-          <span class="ms-auto">
-            
-          </span>
+          <span>Manage Course</span>
+          
         </a>
       </li>
-      <li>
-        <a href="#" class="nav-link px-3">
-          <span class="me-2"><i class="bi bi-book-fill"></i></span>
-          <span>Tests</span>
-        </a>
-      </li>
-      <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
-      <li>
-        <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
-          Addons
+      <li class="my-3"><hr class="dropdown-divider bg-light" /></li>
+      
+      
+      
+        <div>
+          <a href="manageexam.html" class="text-light small fw-bold text-uppercase px-2 mb-1 text-decoration-none"> Exam</a>
         </div>
-      </li>
+        <li>
+          <a
+            class="nav-link px-2 sidebar-link"
+            href="manageexam.html"
+          >
+            <span class="me-2"><i class="bi bi-patch-question-fill"></i></span>
+            <span>Add Exam</span>
+          </a>
+        </li>
       <li>
-        <a href="#" class="nav-link px-3">
-          <span class="me-2"><i class="bi bi-file-text-fill"></i></span>
-          <span>Queries</span>
+        <a
+          class="nav-link px-2 sidebar-link"
+          href="manageexam.html"
+        >
+          <span class="me-2"><i class="bi bi-patch-question-fill"></i></span>
+          <span>Manage Exam</span>
+          
         </a>
       </li>
+      <li class="my-3"><hr class="dropdown-divider bg-light" /></li>
+    
+      <div>
+        <a href="manageexaminee.html" class="text-light small fw-bold text-uppercase px-2 mb-1 text-decoration-none">Examinee</a>
+      </div>
       <li>
-        <a href="#b1" class="nav-link px-3">
-          <span class="me-2"><i class="bi bi-info-circle-fill"></i></span>
-          <span>Help</span>
+        <a
+          class="nav-link px-2 sidebar-link"
+          href="manageexaminee.html"
+        >
+          <span class="me-2"><i class="bi bi-patch-question-fill"></i></span>
+          <span>Add Examinee</span>
         </a>
       </li>
+    
+   
+    <li>
+      <a
+        class="nav-link px-2 sidebar-link"
+        href="manageexaminee.html"
+      >
+        <span class="me-2"><i class="bi bi-patch-question-fill"></i></span>
+        <span>Manage Examinee</span>
+        
+      </a>
+    </li>
+   
     </ul>
   </nav>
 </div>
@@ -140,7 +177,7 @@ id="sidebar"
       </div>
       <div class="col-md-3 mb-3">
         <div class="card bg-warning text-dark h-100">
-          <div class="card-body py-5">Warning Card</div>
+          <div class="card-body py-5">Feedback</div>
           <div class="card-footer d-flex">
             View Details
             <span class="ms-auto">
@@ -151,7 +188,7 @@ id="sidebar"
       </div>
       <div class="col-md-3 mb-3">
         <div class="card bg-success text-white h-100">
-          <div class="card-body py-5">Success Card</div>
+          <div class="card-body py-5">Report</div>
           <div class="card-footer d-flex">
             View Details
             <span class="ms-auto">
@@ -162,7 +199,7 @@ id="sidebar"
       </div>
       <div class="col-md-3 mb-3">
         <div class="card bg-danger text-white h-100">
-          <div class="card-body py-5">Danger Card</div>
+          <div class="card-body py-5">Helpdesk</div>
           <div class="card-footer d-flex">
             View Details
             <span class="ms-auto">
@@ -173,14 +210,14 @@ id="sidebar"
       </div>
     </div>
     <!-- Students enrolled list -->
-    <h3 class="m-3 fw-bold">Enrolled Students Table</h3>
+    <h3 class="m-3 fw-bold">Enrolled Examinee Table</h3>
     <table class="table table-striped m-3">
       <thead>
         <tr>
           <th scope="col">Sr no.</th>
           <th scope="col">First</th>
           <th scope="col">Last</th>
-          <th scope="col">Class</th>
+          <th scope="col">Year</th>
         </tr>
       </thead>
       <tbody>
@@ -188,19 +225,19 @@ id="sidebar"
           <th scope="row">1</th>
           <td>Mark</td>
           <td>Otto</td>
-          <td>six</td>
+          <td>Third year</td>
         </tr>
         <tr>
           <th scope="row">2</th>
           <td>Jacob</td>
           <td>Thornton</td>
-          <td>seven</td>
+          <td>Second year</td>
         </tr>
         <tr>
           <th scope="row">3</th>
           <td colspan="1">Larry</td>
           <td>Thornton</td>
-          <td>Ten</td>
+          <td>Fourth year</td>
         </tr>
       </tbody>
     </table>

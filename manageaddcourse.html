@@ -57,6 +57,7 @@
   </nav>
   <!-- top navigation bar -->
 <!-- offcanvas -->
+<!-- offcanvas -->
 <div
 class="offcanvas offcanvas-start sidebar-nav bg-dark"
 tabindex="-1"
@@ -147,71 +148,97 @@ id="sidebar"
         
       </a>
     </li>
-    
+   
     </ul>
   </nav>
 </div>
 </div>
-<!-- Offcanvas -->
+<!-- offcanvas -->
 <main class="mt-5 pt-3">
-    <div class="container-fluid">
-      <div class="row fs-4">
-        <h1>Add Question</h1>
-      </div>
-      <section class=" border-dark m-3 px-3" >
+  <div class="container-fluid">
+    <div class="row">
+      <h3 class="m-3 p-3 fw-bold">Add Course</h3>
       <div class="input-group mb-3">
-          <select class="form-select" id="inputGroupSelect02">
-            <option selected>Choose...</option>
-            <option value="1">Paper 1</option>
-            <option value="2">Paper 2</option>
-            <option value="3">Paper 3</option>
-          </select>
-          <label class="input-group-text" for="inputGroupSelect02">Options</label>
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Enter Question</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="col-md-6 mb-3">
-          <label for="inputMark" class="form-label"> Marks</label>
-          <input type="text" class="form-control" id="inputMark">
-        </div>
-        <div class="hstack g-2">
-        <div class="mb-3 me-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Option 1</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-        </div>
-        <div class="mb-3 me-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Option 2</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-        </div>
-        <div class="mb-3 me-4">
-          <label for="exampleFormControlTextarea1" class="form-label">Option 3</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-        </div>
-        <div class="mb-3 me-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Option 4</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-        </div>
+        <input type="text" class="form-control" placeholder="Course Name" aria-describedby="button-addon2">
+        <button class="btn btn-primary" type="button" id="button-addon2">Add</button>
       </div>
-      <div class="mb-3 me-4 col-4">
-        <label for="exampleFormControlTextarea1" class="form-label">Correct Option</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-      </div>
-        <div class="mb-3 me-2">
-          <label for="formFileMultiple" class="form-label">Import Image/Document</label>
-          <input class="form-control" type="file" id="formFileMultiple" multiple>
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Confirm to add question</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Add</button>
-      </section>
-    
+      <li class="my-4 text-light"><hr class="dropdown-divider bg-dark" /></li>
+
+      <h3 class="m-3 p-3 fw-bold">Manage Course</h3>
+      <table class="table m-3">
+        <thead>
+          <tr>
+            <th scope="col">Sr No.</th>
+            <th scope="col">Course Name</th>
+            <th scope="col">Operation</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>BE(IT)</td>
+            <td><!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Update
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title fst-italic" id="exampleModalLabel">Update Course Name</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <input type="text" class="form-control" placeholder="Course Name" aria-describedby="button-addon2">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-danger">Delete</button></td>
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>BE(CSE)</td>
+            <td><!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Update
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title fst-italic" id="exampleModalLabel">Update Course Name</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <input type="text" class="form-control" placeholder="Course Name" aria-describedby="button-addon2">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-danger">Delete</button></td>
+            
+          </tr>
+         
+        </tbody>
+      </table>
     </div>
-  </main>
-  
+    </div>
+</main>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

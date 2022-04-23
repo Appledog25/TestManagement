@@ -154,64 +154,114 @@ id="sidebar"
 </div>
 <!-- Offcanvas -->
 <main class="mt-5 pt-3">
-    <div class="container-fluid">
-      <div class="row fs-4">
-        <h1>Add Question</h1>
-      </div>
-      <section class=" border-dark m-3 px-3" >
-      <div class="input-group mb-3">
-          <select class="form-select" id="inputGroupSelect02">
-            <option selected>Choose...</option>
-            <option value="1">Paper 1</option>
-            <option value="2">Paper 2</option>
-            <option value="3">Paper 3</option>
-          </select>
-          <label class="input-group-text" for="inputGroupSelect02">Options</label>
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Enter Question</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="col-md-6 mb-3">
-          <label for="inputMark" class="form-label"> Marks</label>
-          <input type="text" class="form-control" id="inputMark">
-        </div>
-        <div class="hstack g-2">
-        <div class="mb-3 me-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Option 1</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-        </div>
-        <div class="mb-3 me-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Option 2</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-        </div>
-        <div class="mb-3 me-4">
-          <label for="exampleFormControlTextarea1" class="form-label">Option 3</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-        </div>
-        <div class="mb-3 me-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Option 4</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-        </div>
-      </div>
-      <div class="mb-3 me-4 col-4">
-        <label for="exampleFormControlTextarea1" class="form-label">Correct Option</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-      </div>
-        <div class="mb-3 me-2">
-          <label for="formFileMultiple" class="form-label">Import Image/Document</label>
-          <input class="form-control" type="file" id="formFileMultiple" multiple>
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Confirm to add question</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Add</button>
-      </section>
-    
+  <div class="container-fluid">
+    <h3 class="m-3 p-3 fw-bold">Add Examinee</h3>
+    <div class="input-group mb-3 me-2">
+      <span class="input-group-text">First and last name</span>
+      <input type="text" aria-label="First name" class="form-control">
+      <input type="text" aria-label="Last name" class="form-control">
     </div>
-  </main>
-  
+  <div class="hstack g-2 mb-3">
+    <select class="form-select me-3" aria-label="Default select example">
+      <option selected>Gender</option>
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+    </select>
+    <select class="form-select me-2" aria-label="Default select example">
+      <option selected>Course</option>
+      <option value="1">BE(IT)</option>
+      <option value="2">BE(CSE)</option>
+      <option value="3">BE(EXTC)</option>
+    </select>
+    <select class="form-select me-2" aria-label="Default select example">
+      <option selected>Year</option>
+      <option value="1">First year</option>
+      <option value="2">Second year</option>
+      <option value="3">Third year</option>
+      <option value="3">Fourth year</option>
+    </select>
+  </div>
+    <div class="hstack g-2 mb-3"><input type="email" class="form-control me-2" placeholder="Email"><input type="password" class="form-control me-2" placeholder="Password"></div>
+    <div class="d-grid gap-2 col-4 mx-auto">
+        <button class="btn btn-primary" type="button">Add</button>
+        
+      </div>
+      <li class="my-3 text-light"><hr class="dropdown-divider bg-dark" /></li>
+      <h3 class="m-3 p-3 fw-bold">Manage Examinee</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Sr No.</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Course</th>
+            <th scope="col">Year</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark Otto</td>
+            <td>BE(IT)</td>
+            <td>Third year</td>
+            <td>markotto@gmail.com</td>
+            <td>mark123</td>
+            <td>       <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Manage
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title fst-italic" id="exampleModalLabel">Update Examinee Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="input-group mb-3 me-2">
+                            <span class="input-group-text">First and last name</span>
+                            <input type="text" aria-label="First name" class="form-control">
+                            <input type="text" aria-label="Last name" class="form-control">
+                          </div>
+                          <select class="form-select me-3 mb-3" aria-label="Default select example">
+                            <option selected>Gender</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                          </select>
+                          <select class="form-select me-2 mb-3" aria-label="Default select example">
+                            <option selected>Course</option>
+                            <option value="1">BE(IT)</option>
+                            <option value="2">BE(CSE)</option>
+                            <option value="3">BE(EXTC)</option>
+                          </select>
+                          <select class="form-select me-2 mb-3" aria-label="Default select example">
+                            <option selected>Year</option>
+                            <option value="1">First year</option>
+                            <option value="2">Second year</option>
+                            <option value="3">Third year</option>
+                            <option value="3">Fourth year</option>
+                          </select>
+                          <input type="email" class="form-control me-2 mb-3" placeholder="Email"><input type="password" class="form-control me-2 mb-3" placeholder="Password">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Update</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-danger">Remove</button></td>
+          </tr>
+          
+        </tbody>
+      </table>
+  </div>
+
+</main>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
